@@ -152,6 +152,14 @@
             <Form>RptVendasporCli</Form>
             <FormType>dfm</FormType>
         </DCCReference>
+        <DCCReference Include="..\INFRA\PadraoRpts\RRelatorioGroup.pas">
+            <Form>frmRelatorioGroup</Form>
+            <FormType>dfm</FormType>
+        </DCCReference>
+        <DCCReference Include="..\Report\RptVendasPorCliente.pas">
+            <Form>frmRelatorioGVendasporCliente</Form>
+            <FormType>dfm</FormType>
+        </DCCReference>
         <BuildConfiguration Include="Base">
             <Key>Base</Key>
         </BuildConfiguration>

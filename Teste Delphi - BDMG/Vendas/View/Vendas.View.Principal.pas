@@ -49,7 +49,7 @@ uses
   Vendas.View.CadProdutos,
   Vendas.View.PreVendas,
   RptClientes,
-  RptVendasPorClientes;
+  RptVendasPorCliente;
 
 {$R *.dfm}
 
@@ -119,7 +119,7 @@ end;
 
 procedure TfrmPrincipal.rptVendasPorClientesClick(Sender: TObject);
 begin
-  AbreRpt(TRptVendasporCli);
+  AbreRpt(TfrmRelatorioGVendasporCliente);
 end;
 
 procedure TfrmPrincipal.Sair1Click(Sender: TObject);

@@ -21,7 +21,9 @@ uses
   Enter in '..\INFRA\Components\Terceiros\Teclas\Enter.pas',
   Model.Concrete.PreVenda in '..\Model\Model.Concrete.PreVenda.pas',
   Dao.DmDadosVisuais in '..\Dao\Dao.DmDadosVisuais.pas' {DmDadosVisuais: TDataModule},
-  RptVendasPorClientes in '..\Report\RptVendasPorClientes.pas' {RptVendasporCli};
+  RptVendasPorClientes in '..\Report\RptVendasPorClientes.pas' {RptVendasporCli},
+  RRelatorioGroup in '..\INFRA\PadraoRpts\RRelatorioGroup.pas' {frmRelatorioGroup},
+  RptVendasPorCliente in '..\Report\RptVendasPorCliente.pas' {frmRelatorioGVendasporCliente};
 
 {$R *.res}
 

@@ -261,7 +261,7 @@ begin
             sSQL:= 'INSERT INTO Vendas (codigocli, datavenda, totalvenda) ';
             sSQL:= sSQL + ' VALUES ( ' +
             IntToStr(ACodigoCli) + ', ' +
-            '''' + DateTimeToStr(ADataVenda) + '''' + ', ' +
+             '''' + FormatDateTime('yyyy-MM-dd hh:mm:ss', ADataVenda) + ''''  + ', ' +
             CurrToStr(Atotalvenda) + ' )';
             FQuery.ExecSQL(sSQL);
             Result:= True;

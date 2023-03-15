@@ -212,8 +212,8 @@ begin
             sSQL:= sSQL + ' VALUES ( ' +
             QuotedStr(Anomecli) + ', ' +
             QuotedStr(Acpfcli) + ', ' +
-            QuotedStr(Astatuscli) + ', '
-            + ' CONVERT(datetime, ''' + FormatDateTime('yyyy-mm-dd', Adatanasccli)+ ''', 120))'
+            QuotedStr(Astatuscli) + ', ' +
+            ' CONVERT(datetime, ''' + FormatDateTime('yyyy-mm-dd', Adatanasccli)+ ''', 120))'
           end
           else
           begin
@@ -230,8 +230,7 @@ begin
                   + ' nomecli = '     + QuotedStr(Anomecli) + ', '
                   + ' cpfcli = '      + QuotedStr(Acpfcli) + ', '
                   + ' statuscli = '   + QuotedStr(Astatuscli) + ', '
-                  + ' datanasccli = ' + ''''+ DateToStr(Adatanasccli) + ''''
-
+                  + ' datanasccli = ' + '''' + FormatDateTime('yyyy-MM-dd', Adatanasccli) + ''''
                   + ' where codigocli = ' + IntToStr(Acodigocli);
 
         end;
