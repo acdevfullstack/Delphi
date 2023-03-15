@@ -32,10 +32,10 @@ begin
   try
   Result := TFDConnection.Create(nil);
   Result.DriverName := 'MSSQL';
-  Result.Params.Add('Server=DEV\SQLEXPRESS');
+  Result.Params.Add('Server=FULLSTACK\SQLEXPRESS');
   Result.Params.Add('Database=Vendas');
   Result.Params.Add('User_Name=sa');
-  Result.Params.Add('Password=Dev@19');
+  Result.Params.Add('Password=DevOps@19082703');
   Result.Connected := True;
   except
     on E: Exception do

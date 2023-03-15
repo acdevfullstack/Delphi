@@ -29,7 +29,6 @@ begin
   Application.Initialize;
   Application.MainFormOnTaskbar := True;
   Application.CreateForm(TfrmPrincipal, frmPrincipal);
-  Application.CreateForm(TRptVendasporCli, RptVendasporCli);
   //Application.CreateForm(Tfrmcadpadrao, frmcadpadrao);
   Application.Run;
 end.
